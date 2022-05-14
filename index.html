@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -12,10 +13,10 @@
 
 
 
-    <div class="sidebar">
+    <aside class="sidebar">
       <div class="dashboard">Dashboard</div>
 
-      <div class="sidebar-menu1">
+      <nav class="sidebar-menu1">
         <ul class="sidebar-list">
           <li>Home</li>
           <li>Profile</li>
@@ -24,53 +25,57 @@
           <li>Tasks</li>
           <li>Communities</li>
         </ul>
-      </div>
+      </nav>
 
-      <div class="sidebar-menu2">
+      <nav class="sidebar-menu2">
         <ul class="sidebar-list">
           <li>Settings</li>
           <li>Support</li>
           <li>Privacy</li>
         </ul>
-      </div>
-    </div>
+      </nav>
+    </aside>
 
 
 
-    <div class="header">
-      <form action="">
-        <label for="search"></label>
-        <input type="search" name="search" id="search">
-      </form>
-      <div class="top-header">
+    <header class="header">
+
+    <form class="top-header-left"action="">
+      <label for="search"></label>
+      <input type="search" name="search" id="search">
+    </form>
+      <div class="top-header-right">
         <div class="bell-button"></div>
         <div class="profile-picture-menu"></div>
         <h3 class="profile-name-menu">Morgan Oakley</h3>
       </div>
 
-      <div class="bottom-header">
+
+
+      <div class="bottom-header-left">
         <div class="profile-picture-primary"></div>
         <p class="hi-there">
           Hi there,
         </p>
         <h2 class="profile-name-primary">Morgan Oakley(@morgan)</h2>
-        <div class="header-buttons">
-          <button class="header-button">New</button>
-          <button class="header-button">Upload</button>
-          <button class="header-button">Share</button>
-        </div>
       </div>
-    </div>
+      <div class="bottom-header-right">
+        <button class="header-button">New</button>
+        <button class="header-button">Upload</button>
+        <button class="header-button">Share</button>
+      </div>
+
+    </header>
 
 
 
-    <div class="content">
+    <main class="content">
 
       <div class="projects">
         <h3 class="content-heading">Your Projects</h3>
         <div class="project-boxes">
 
-          <div class="project-box">
+          <article class="project-box">
             <h3 class="project-heading">Super Cool Project</h3>
             <p class="project-content">
               Sed tempus ut lacus ut scelerisque.
@@ -82,8 +87,8 @@
               <div class="project-button"></div>
               <div class="project-button"></div>
             </div>
-          </div>
-          <div class="project-box">
+          </article>
+          <article class="project-box">
             <h3 class="project-heading">Less Cool Project</h3>
             <p class="project-content">
               Nullam condimentum ipsum ut lectus vehicula
@@ -97,8 +102,8 @@
               <div class="project-button"></div>
               <div class="project-button"></div>
             </div>
-          </div>
-          <div class="project-box">
+          </article>
+          <article class="project-box">
             <h3 class="project-heading">Impossible App</h3>
             <p class="project-content">
               In hac habitasse platea dictumst. Vivamus
@@ -110,8 +115,8 @@
               <div class="project-button"></div>
               <div class="project-button"></div>
             </div>
-          </div>
-          <div class="project-box">
+          </article>
+          <article class="project-box">
             <h3 class="project-heading">Easy Peasy App</h3>
             <p class="project-content">
               Etiam cursus eros ac efficitur fringilla.
@@ -124,8 +129,8 @@
               <div class="project-button"></div>
               <div class="project-button"></div>
             </div>
-          </div>
-          <div class="project-box">
+          </article>
+          <article class="project-box">
             <h3 class="project-heading">Ad Blocker</h3>
             <p class="project-content">
               Quisque eget rutrum isl. Nam auque
@@ -138,8 +143,8 @@
               <div class="project-button"></div>
               <div class="project-button"></div>
             </div>
-          </div>
-          <div class="project-box">
+          </article>
+          <article class="project-box">
             <h3 class="project-heading">Money Maker</h3>
             <p class="project-content">
               Present convallis, libero quis congue
@@ -152,7 +157,7 @@
               <div class="project-button"></div>
               <div class="project-button"></div>
             </div>
-          </div>
+          </article>
 
         </div>
       </div>
@@ -220,7 +225,7 @@
       </div>
 
 
-    </div>
+    </main>
 
   </div>
 </body>
