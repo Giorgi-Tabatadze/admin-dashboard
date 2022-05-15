@@ -50,9 +50,10 @@ ul{
 
 .dashboard {
   margin-left: -8px;
+  margin-top: 0;
   font-size: 22px;
   font-weight: 500;
-  margin-top: 30px;
+  margin-top: 10px;
   display: flex;
   gap: 20px;
   align-items: center;
@@ -157,13 +158,15 @@ a {
 
 .bottom-header-right{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 30px;
 }
 
 
 .header-button{
   background-color: #0284c7;
   color: #f0f9ff;
+  font-size: 14px;
   padding: 10px 20px;
   border: 0px;
   border-radius: 30px;
